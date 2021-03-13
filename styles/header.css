@@ -1,0 +1,109 @@
+/* :root {
+    --main-c: #211915;
+    --second-c: #ffffff;
+    --third-c: #000000;
+    --fourth-c: #b24e55;
+    --fifth-c: #00a99d;
+    --main-font: 'Unica One', cursive;
+} */
+
+header {
+    background-color: var(--main-c);
+    display: flex;
+    height: 20vw;
+    max-height: 180px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+    position: fixed;
+    width: 100%;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+}
+
+header a {
+    color: var(--second-c);
+}
+
+header img {
+    max-height: 80%;
+}
+
+.hamburger-list, #hamburger {
+    display: none;
+}
+.fade-in {
+    animation: entra 1s ;
+}
+
+@keyframes entra {
+    0%{opacity: 0;}
+    100%{opacity: 1;}
+}
+
+.fade-out {
+    animation: sale 1s ;
+}
+
+@keyframes sale {
+    0%{opacity: 1;}
+    100%{opacity: 0;}
+}
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    header nav>ul {
+        /* visibility: hidden; */
+        display: none;
+    }
+
+    #hamburger {
+        display: block;
+        background-image: url(../img/Hamburger_icon.png);
+        background-color: var(--main-c);
+        background-size: cover;
+        height: 7vw;
+        width: 7vw;
+        box-shadow: none;
+        border-style: none;
+    }
+    .hamburger-list {
+        position: absolute;
+        /* display: block; */
+        width: 100%;
+        height: calc(100vh - 19vw);
+        top: 19vw;
+        right: 0px;
+        
+    }
+    .hamburger-list ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        padding: 50px 10px;
+        background-color: var(--main-c-alpha);
+        padding: 10px;
+        text-align: center;
+        height: 100%;
+    }
+    .hamburger-list a {
+        font-size: 2rem;
+        display: block;
+        width: 100%;
+    }
+
+    
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (max-width: 992px) {
+
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (max-width: 1366) {
+    
+}
+

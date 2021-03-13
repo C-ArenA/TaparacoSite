@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Unica+One&display=swap');
+
+html {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+*, *:before, *:after {
+    -webkit-box-sizing: inherit;
+    -moz-box-sizing: inherit;
+    box-sizing: inherit;
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    --main-c: #211915;
+    --main-c-alpha: #211915ee;
+    --second-c: #ffffff;
+    --third-c: #000000;
+    --fourth-c: #b24e55;
+    --fifth-c: #00a99d;
+    --main-font: 'Unica One', cursive;
+    font-size: 16px;
+}
+body {
+    font-family: var(--main-font);
+}
+
+a {
+    color: var(--main-c);
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--fourth-c);
+}
+
+section {
+    padding-top: 20vw;
+    min-height: 100vh;
+    outline-style: dotted;
+}
