@@ -14,14 +14,20 @@ header {
     max-height: 180px;
     justify-content: space-between;
     align-items: center;
-    padding: 0 2rem;
+    /* padding: 0 2rem; */
     position: fixed;
     width: 100%;
+}
+
+header nav {
+    width: 100%;
+    padding-left: 10%;
 }
 
 header nav ul {
     list-style: none;
     display: flex;
+    justify-content: space-evenly;
 }
 
 header a {
@@ -29,7 +35,8 @@ header a {
 }
 
 header img {
-    max-height: 80%;
+    max-height: 70%;
+    padding-left: 2rem;
 }
 
 .hamburger-list, #hamburger {
@@ -53,11 +60,17 @@ header img {
     100%{opacity: 0;}
 }
 /* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 700px) {
     header nav>ul {
         /* visibility: hidden; */
         display: none;
     }
+
+    header nav {
+        width: auto;
+        padding-right: 2rem;
+    }
+    
 
     #hamburger {
         display: block;
@@ -98,12 +111,10 @@ header img {
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (max-width: 992px) {
-
+@media only screen and (min-width: 1000px) {
+    :root{
+        font-size: 20px;
+    }
 }
 
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (max-width: 1366) {
-    
-}
 
