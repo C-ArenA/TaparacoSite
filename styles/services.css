@@ -1,0 +1,77 @@
+#services {
+    overflow: hidden;
+    
+}
+#services .message{
+    width: 30vw;
+    margin: auto;
+    font-size: 3rem;
+    text-align: center;
+    max-height: 80vh;
+}
+
+.fotoText{
+    position: relative;
+    left: 20vw;
+    right: 40vw;
+    top: 10vh;
+    font-size: 4rem;
+    color: white;
+    
+    width: fit-content;
+    margin: 0;
+    -webkit-text-stroke: 1px black;
+    text-shadow:
+       3px 3px 0 #000,
+     -1px -1px 0 #000,  
+      1px -1px 0 #000,
+      -1px 1px 0 #000,
+       1px 1px 0 #000;
+}
+
+.videoText{
+    position: relative;
+    left: 60vw;
+    top: 10vh;
+    font-size: 4rem;
+    color: red;
+    text-shadow: 3px 3px 0 #000;
+}
+
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 700px) {
+    #services .message {
+        width: 90vw;
+        
+    }
+    .fotoText {
+        left: 20vw;
+    }
+    .videoText {
+        left: 30vw;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    #services .message {
+        width: 100vw;
+        font-size: 1.8rem;
+    }
+    .fotoText {
+        left: 30vw;
+        font-size: 2rem;
+    }
+    .videoText {
+        left: 40vw;
+        font-size: 2rem;
+    }
+}
+
+@media only screen and (max-width: 1700px){
+    #services .message {
+        width: 60vw;
+        
+    }
+}

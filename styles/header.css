@@ -8,6 +8,7 @@
 } */
 
 header {
+    z-index: 12;
     background-color: var(--main-c);
     display: flex;
     height: 20vw;
@@ -17,6 +18,7 @@ header {
     /* padding: 0 2rem; */
     position: fixed;
     width: 100%;
+    transition: height 0.5s;
 }
 
 header nav {
@@ -71,7 +73,9 @@ header img {
         padding-right: 2rem;
     }
     
-
+    header{
+        min-height: 80px;
+    }
     #hamburger {
         display: block;
         background-image: url(../img/Hamburger_icon.png);
