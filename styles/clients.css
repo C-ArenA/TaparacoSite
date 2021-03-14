@@ -1,0 +1,38 @@
+#clients {
+    padding-top: 15vh;
+}
+.clients-container {
+    margin: 10vh 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+
+#clients p{
+    width: 30vw;
+    margin: auto;
+    font-size: 3rem;
+    text-align: center;
+    max-height: 80vh;
+}
+
+.clients-container img {
+    height: 15vw;
+}
+
+@media only screen and (max-width: 700px) {
+    #clients p{
+        width: 90vw;
+        font-size: 2rem;
+    }
+    .clients-container img {
+        height: 25vw;
+        margin: 2vh;
+    }
+    .clients-container {
+        margin: 3vh 0;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+}
